@@ -1,0 +1,23 @@
+{
+  "skill_name": "tia-hmi",
+  "evals": [
+    {
+      "id": 1,
+      "name": "unified-tag-screen-design",
+      "prompt": "ช่วยออกแบบหน้า HMI บน WinCC Unified ใน TIA Portal V19 สำหรับแสดงอุณหภูมิและปุ่มเริ่ม/หยุดเครื่อง ต้องถามข้อมูลอะไรบ้าง และควรผูก tag กับ PLC อย่างไรโดยไม่เดา address?",
+      "expected_output": "Asks for target panel/runtime and PLC/tag interface details, gives a version-aware design workflow, and does not invent addresses or claim unsupported details."
+    },
+    {
+      "id": 2,
+      "name": "comfort-alarm-troubleshooting",
+      "prompt": "โปรเจกต์ TIA V17 ใช้ Comfort Panel แล้ว alarm จาก PLC ไม่ขึ้นบนจอ ช่วยไล่เช็กทีละจุดโดยอ้างอิงคู่มือที่มี",
+      "expected_output": "Uses the V17 Comfort/WinCC documentation when applicable, checks alarm configuration, PLC connection/tags, runtime and deployment in a bounded diagnostic sequence, and distinguishes verified facts from assumptions."
+    },
+    {
+      "id": 3,
+      "name": "wincc-platform-selection",
+      "prompt": "จะทำ HMI ใหม่ใน TIA มี Basic, Comfort, Advanced, Professional กับ Unified ต่างกันยังไง ควรเลือกอะไรถ้าต้องใช้ panel กับ browser?",
+      "expected_output": "Clarifies device/runtime constraints, distinguishes TIA WinCC editions and Unified from standalone SCADA WinCC, avoids blanket compatibility claims, and directs the user to verify exact version/device support in official Siemens documentation."
+    }
+  ]
+}
